@@ -1,0 +1,63 @@
+/*
+    Führen Sie bitte die folgende Enumeration ein:
+        Sieger (mit den Konstanten istA und istB)
+
+    Führen Sie bitte die beiden folgenden Klassen ein:
+        A_Spieler
+            String: Name
+            Integer: x, y
+            Bool: ImSpiel
+            Methoden:
+                a) Name: Jubeln
+                   Übergabewerte: Keine
+                   Funktion: Konsolenausgabe: "Ich liebe es, wenn ein Plan funktioniert!"
+                   Rückgabewert: Keiner
+                b) Name: Heulen
+                   Übergabewerte: Keine
+                   Funktion: Konsolenausgabe: "Ich hasse es, wenn ein Plan scheitert!"
+                   Rückgabewert: Keiner 
+                c) Name: Grüßen
+                   Übergabewerte: eine Variable a vom Typ A_Spieler
+                   Funktion: Konsolenausgabe: Hallo + Name von a +"!"
+                   Rückgabewert: Keiner   
+        B_Spieler
+            String: Name
+            Integer: x, y
+            Bool: ImSpiel
+            Methoden:
+                a) Name: Jubeln
+                   Übergabewerte: Keine
+                   Funktion: Konsolenausgabe: "Wir B-Spieler sind Siegertypen!"
+                   Rückgabewert: Keiner
+                b) Name: Heulen
+                   Übergabewerte: Keine
+                   Funktion: Konsolenausgabe: "Pah, der A-Spieler hatte nur Glück ..."
+                   Rückgabewert: Keiner 
+                c) Name: Grüßen
+                   Übergabewerte: eine Variable b vom Typ B_Spieler
+                   Funktion: Konsolenausgabe: Hallo + Name von b +"!"
+                   Rückgabewert: Keiner 
+
+   Main-Methode:
+        - Führen Sie bitte ein Spielfeld ein (Zum Beispiel als Variablen oder Konstanten und wählen Sie selbst Breite und Höhe)
+        - Führen Sie 5 Spieler vom Typ A_Spieler auf der oberen Seite des Spielfelds mit zufälligen Positionen ein
+          (Kein Spieler darf auf ein bereits bestzes Feld)
+        - Führen Sie 5 Spieler vom Typ B_Spieler auf der unteren Seite des Spielfelds mit zufälligen Positionen ein
+          (Kein Spieler darf auf ein bereits bestzes Feld) 
+        - Jeder A_Spieler wird in einer Liste namens 'aListe' abgespeichert
+        - Jeder B_Liste wird in einer Liste namens 'bListe' abgespeichert 
+        - Die A_Spieler werden der Reihe nach "Achim", "Anja", "Anton", "Alma" oder "Axel" genannt
+        - Die B_Männer werden der Reihe nach "Belinda", "Barbara", "Björn", "Bianca" oder "Bruno" genannt
+        - Jeder Spieler speichert unter x und y die ausgeloste Position und den Wert 'true' bei ImSpiel
+
+        Es startet eine Schleife, pro Durchlauf ...
+         - wandern alle Spieler auf ein zufälliges Nachbarfeld (falls nicht dabei das Spielfeld verlassen werden würde) 
+         - grüßen sich die beiden A_Spieler, falls sie auf einem identischen Feld landen
+         - grüßen sich die beiden B_Spieler, falls sie auf einem identischen Feld landen
+         - kämpfen A_Spieler gegen B_Spieler, falls sie auf einem identischen Feld landen
+           + der Sieger wird ausgelost
+           + der Sieger jubelt
+           + der Verlierer heult
+           + beim Verlierer wird ImSpiel auf 'false' gesetzt
+        ... die Schleife endet, falls nur noch Spieler von einem Team übrig geblieben sind 
+*/

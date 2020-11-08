@@ -1,0 +1,8 @@
+﻿/* Aufgabe 0 (Basics)
+ * Erstellen Sie die Klasse "Song" mit den öffentlichen Attributen
+ * string "Titel", int "DauerSekunden", string "Interpret"
+ * und der Methode "Spielen", die auf der Konsole alle Informationen über den Song ausgibt (die Dauer dabei in Minuten und Sekunden, z.B. 03:35).
+ * 
+ * Erstellen Sie in der Main einen Song und rufen Sie die Methode auf.
+ * Erstellen Sie außerdem ein UML Klassendiagramm für die Klasse "Song".
+ */

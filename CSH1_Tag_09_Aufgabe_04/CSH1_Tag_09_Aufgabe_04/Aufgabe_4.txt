@@ -1,0 +1,15 @@
+/*
+ Schreiben Sie bitte ein C#-Programm, in dem ...
+ - eine Klasse 'Produkt' definiert wird
+   + Klassenmember sind:
+     - Counter (Integer, public)
+     - name (String, private)
+        + Property Name: "normales" set / bei get wird der Counter hochgezählt FALLS name bereits initialisiert
+     - mindestpreis (Integer, private)
+        + Property Mindestpreis: "normales" set / KEIN get
+     - verkaufspreis (Integer, private)
+        + Property Verkaufspreis: "normales" get / set nur FALLS value>=mindestpreis SONST verkaufspreis=mindestpreis
+ - im Main alle obigen "Features" getestet werden
+
+ Erstellen Sie zu der Klasse ein UML Klassendiagramm.
+*/

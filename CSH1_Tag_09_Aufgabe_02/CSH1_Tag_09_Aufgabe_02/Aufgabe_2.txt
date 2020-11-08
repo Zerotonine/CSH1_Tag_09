@@ -1,0 +1,17 @@
+/*
+ * Rückblick auf unseren ersten Unterrichtstag:
+ * 
+ * Sie bauen einen Roboter. Erstellen Sie die Klasse Robot mit folgenden öffentlichen Membern:
+ *  - Integer "BatterieLaufzeit"
+ *  - String "Aufgabe"
+ *  - Methode "IstBatterieLaufzeitNiedrig"
+ *      gibt true zurück, wenn die Laufzeit kleiner 2 ist, sonst false.
+ *  - Methode "FühreAufgabeAus"
+ *      gibt auf dem Bildschirm den Text des Attributs "Aufgabe" aus wenn "isBatterieLaufzeitNiedrig" false liefert
+ *          und reduziert dann die Batterie Laufzeit um 1, 
+ *      sonst soll "Ich muss aufgeladen werden." in der Konsole erscheinen.
+ * 
+ * Erstellen Sie in der Main einen Roboter mit der Aufgabe "Ich reiche Butter." und einer BatterieLaufzeit von 5.
+ * Lassen Sie ihn fünf mal in einer Schleife Butter reichen.
+ * Erstellen Sie zu der Klasse ein UML Klassendiagramm.
+ */

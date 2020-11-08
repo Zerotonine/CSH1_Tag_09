@@ -1,0 +1,12 @@
+/*
+ Schreiben Sie bitte ein C#-Programm, in dem ...
+ - die Klasse 'Schachfeld' definiert wird
+   + die Klasse besitzt zwei private Methoden (Linie und Reihe) und eine public (Zufallsfeld)
+     - keine der Methoden hat Übergabewerte
+     - Linie liefert als Rückgabewert einen Buchstaben zwischen a und h (als String)
+     - Reihe liefert als Rückgabewert eine Ziffer zwischen 1 und 8 (als String)
+     - Zufallsfeld liefert als Rückgabewert die Konkenation der Rückgabewerte aus Linie und Reihe
+ - im Main ein Objekt feld vom Typ Schachfeld instanziiert wird
+   + zur Kontrolle wird der Rückgabewert feld.Zufallsfeld() auf der Konsole ausgegeben
+
+*/

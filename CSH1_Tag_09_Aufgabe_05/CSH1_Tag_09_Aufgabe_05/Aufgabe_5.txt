@@ -1,0 +1,59 @@
+/*
+    Führen Sie bitte die beiden folgenden Klassen ein:
+        BankMitarbeiter
+            Felder: 
+                Id (öffentlich, Integer)
+                Name (öffentlich, String)
+                bearbeitungsCode (privat, Integer)
+             Methoden:
+                SetCode
+                    Übergabewerte: Einen Zufallsgenerator (der im Main definiert wurde)
+                    Funktion:      Weist dem Bearbeitungs-Code eine Zufallszahl zwischen 10000 und 20000 zu 
+                                   Code wird dem Mitarbeiter per Mail zugesendet => simuliert durch Konsolenausgabe
+                                   (HINWEIS: Nur 1-malige Zuweisung möglich)
+                    Rückgabewert:  Keine 
+                 GetCode
+                    Übergabewert: 1 Integer code
+                    Funktion:     Überprüft, ob code==bearbeitungscode
+                    Rückgabewert: bearbeitungscode, FALLS code==bearbeitungscode  
+                                  SONST 0
+        Konto
+            Felder:
+                Kontonummer (öffentlich, Integer)
+                InhaberMail (öffentlich, String)
+                geheimCode (privat, String)
+                kontostand (privat, Double)
+                dispo (privat, Double)
+                Ansprechpartner (öffentlich, BankMitarbeiter)
+            Property GeheimCode
+                set: Setzung nur einmalig möglich, wird an den Kunden per Mail gesendet => simuliert durch Konsolenausgabe
+                get: keines
+            Methoden:
+                SetDispo
+                    Übergabewerte: Integer code, Double dispo
+                    Funktion: Vergleicht den code mit dem bearbeitungscode des Ansprechpartners => dispo wird gesetzt FALLS Codes übereinstimmen
+                    Rückgabewert: true, FALLS Dispo-Zuweisung klappte, SONST false
+                GetKontostand
+                    Übergabewerte: keine
+                    Funktion: ermittelt einen String in Abhängigkeit des Kontostandes
+                    Rückgabewert: String ("keine Angabe" bei Kontostand < 0 / "wohlhabend" bei Kontostand > 100000 / sonst "Standard" )
+                Einzahlen
+                    Übergabewerte: Double betrag
+                    Funktion: erhöht den Kontostand, FALLS betrag positiv
+                    Rückgabewert: true, FALLS betrag positiv, SONST false
+                Abbuchen
+                    Übergabewerte: Double betrag, String code
+                    Funktion: vermindert den Kontostand um betrag FALLS a) code == geheimcode b) kontostand-betrag nicht den dispo überzieht
+                    Rückgabewert: true, FALLS betrag abgezogen werden konnte, SONST false
+                
+      Im Main:
+        Führen Sie bitte (mindestens) einen Bankmitarbeiter und ein Konto ein
+        Füllen Sie von allen Objekten alle Felder
+        Testen Sie bitte durch geeigneten Code alle Methoden
+
+        HINWEIS:
+            Sie können es sich beim Testlauf im Main (falls Sie möchten) gerne leicht machen!
+            (Ein aufwendiges Eingabemenü wird nicht zwingend verlangt ... aber gene genommen)
+
+    Erstellen Sie zu der Klasse ein UML Klassendiagramm.
+*/

@@ -1,0 +1,18 @@
+/*
+ Schreiben Sie bitte ein C#-Programm, in dem ...
+ - eine Klasse Firma definiert wird
+   + Die Member der Klasse sind: (Zugriffsmodifizierer jeweils public)
+     - String: Name
+     - Double-Liste: Konten
+     - Methode: Summe
+       + Funktion: berechnet den Gesamtbetrag aller Listenelemente
+       + Rückgabewert: Gesamtbetrag
+ - im Main 2 Firmen instanziiert werden
+   + wählen Sie jeweils einen Firmennamen
+   + die erste Firma hat 2 Konten, die zweite 3 (wählen Sie beliebige Kontobeträge)
+        heißt: Die Double-Beträge werden der Double-Liste hinzugefügt
+   + beide Firmen sollen in der Liste 'firmenliste' abgespeichert werden
+ - in einer foreach-Schleife alle Elemente (Name und Gesamtbetrag) aus firmenliste auf der Konsole ausgegeben werden
+
+ Erstellen Sie zu der Klasse ein UML Klassendiagramm.
+*/
